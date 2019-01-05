@@ -7,18 +7,22 @@ We have four Data Sources:
 
 a.	NYPD Motor Vehicle Collisions : 
 ●	LINK : https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95
+
 ●	File name in directory: /datasets/NYPD_Motor_Vehicle_Collisions.csv
 
 b.	Parking Violations Issued : 
 ●	LINK : https://data.cityofnewyork.us/City-Government/Parking-Violations-Issued-Fiscal-Year-2017/2bnn-yakx 
+
 ●	File name in directory: /datasets/Parking_Violations_Issued.csv
 
 c.	Moving Violations Summonses : 
 ●	LINK : https://catalog.data.gov/dataset/traffic-tickets-issued-beginning-2008
+
 ●	File name in directory : /datasets/Traffic_Tickets_Issued.csv
 
 d.	Weather data in New York City - 2016 : 
 ●	LINK : https://www.kaggle.com/mathijs/weather-data-in-new-york-city-2016
+
 ●	File name in directory : /datasets/weather_data_nyc_centralpark_2016.csv
 
 
