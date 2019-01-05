@@ -74,7 +74,7 @@ PARKING VIOLATIONS
 ●	jar -cvf parkingProfile.jar ParkingViolationProf*.class  -- to create the jar file (file already provided)
 ●	hadoop jar parkingProfile.jar ParkingViolationProfiling project/Parking_Profile_final_output   -- to execute the parking violation ETL code
 
-	MOTOR COLLISIONS
+MOTOR COLLISIONS
 ●	The cleaned data did not require profiling.
 
 
@@ -84,7 +84,7 @@ TRAFFIC TICKETS SUMMONSES
 ●	jar -cvf TrafficTicketsIssuedProfiling.jar TrafficTickets*.class -- to create the jar file (file already provided)
 ●	hadoop jar TrafficTicketsIssuedProfiling.jar TrafficTicketsIssuedProfiling project/Tickets_ETL_final_output/part-r-00000 project/Tickets_Profile_output   -- to execute the traffic tickets Profiling code
 
-		ITERATION 2:
+ITERATION 2:
 ●	javac -classpath `yarn classpath` -d . FinalTrafficTicketsIssuedMapper.java
 -- to compile the java file (class file already provided)
 ●	javac -classpath `yarn classpath`:. -d . FinalTrafficTicketsIssued.java
@@ -94,7 +94,7 @@ TRAFFIC TICKETS SUMMONSES
 ●	hadoop jar FinalTrafficTicketsIssuedProfiling.jar FinalTrafficTicketsIssued project/Tickets_Profile_output/part-r-00000 project/Tickets_output_2
 		-- to execute the traffic tickets Profiling code
 
-		FINAL :
+FINAL :
 ●	javac -classpath `yarn classpath`  -d . TrafficTicketsProfileFinalMapper.java 
 -- to compile the java file (class file already provided)
 ●	javac -classpath `yarn classpath`:. -d . TrafficTicketsProfileFinal.java 
@@ -112,7 +112,7 @@ WEATHER DATA IN NYC
 
 
 
-5.	EXTRACTING OUTPUT FILES
+5.EXTRACTING OUTPUT FILES
 	
 The output files from ETL and Profiling stage needed to be put into the project packet, hence were extracted from HDFS using commands mentioned in ‘/data_extraction/extraction.sql’ file.
 After having run these commands, the files can be brought into the local system using tools like FUGU or FileZilla. 
@@ -121,7 +121,7 @@ E.g. output file for Parking Violations ETL is stored as -- /data_ETL/parkingETL
    	     output file for Parking Violations Profile is stored as -- /data_ETL/parkingProfilingOutput , and so on.
 
 
-6.	ANALYTICS
+6.ANALYTICS
 
 ●	ANALYTIC 1: Correlation between petty offenses (parking violations and petty moving violations) and motor collisions
 The code and outputs related to this file can be found in the folder “analytic/analytic1/code_an1.sql” and “analytic/analytic1/output” files respectively
